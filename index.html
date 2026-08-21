@@ -159,7 +159,7 @@
 
         /* --- TAMPILAN PAGE / HALAMAN SPESIFIK --- */
         .page {
-            display: none; /* Sembunyikan semua halaman secara default */
+            display: none; 
             width: 100%;
             max-width: 700px;
             padding: 20px;
@@ -170,7 +170,7 @@
         }
 
         .page.active {
-            display: flex; /* Tampilkan halaman yang aktif */
+            display: flex; 
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -181,7 +181,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* --- 1. TAMPILAN BERANDA (HANYA LOGO & SLOGAN) --- */
+        /* --- 1. TAMPILAN BERANDA --- */
         .logo-img { 
             width: 150px; 
             height: 150px; 
@@ -254,7 +254,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
             width: 100%;
             max-height: 70vh;
-            overflow-y: auto; /* Memungkinkan scroll khusus di dalam galeri jika foto banyak */
+            overflow-y: auto;
         }
 
         .gallery-grid {
@@ -339,11 +339,11 @@
             <li><a onclick="showPage('homePage')">Beranda</a></li>
             <li><a onclick="showPage('aboutPage')">Tentang</a></li>
             <li><a onclick="showPage('galleryPage')">Galeri Foto</a></li>
-            <li><a href="https://discord.gg/g37p647xXT" target="_blank">Discord Resmi</a></li>
+            <li><a href="https://discord.gg/eus8bBmPU" target="_blank" rel="noopener noreferrer">Discord Resmi</a></li>
         </ul>
     </nav>
 
-    <!-- HALAMAN 1: BERANDA (TAMPILAN AWAL HANYA LOGO & SLOGAN) -->
+    <!-- HALAMAN 1: BERANDA -->
     <div id="homePage" class="page active">
         <img src="https://i.ibb.co.com/VcKb2pR2/download-2-removebg-preview.png" alt="Logo Amerta" class="logo-img">
         <div class="logo">AMERTA</div>
@@ -352,7 +352,7 @@ Tidak ada tinggi dan rendah.<br>
 Semua setara dalam ruang yang sama.</p>
     </div>
 
-    <!-- HALAMAN 2: TAMPILAN KHUSUS ABOUT -->
+    <!-- HALAMAN 2: TENTANG -->
     <div id="aboutPage" class="page">
         <div class="about-card">
             <div class="page-title">Tentang Amerta</div>
@@ -360,25 +360,45 @@ Semua setara dalam ruang yang sama.</p>
                 <strong>Amerta</strong> lahir dari sebuah visi sederhana: menciptakan suaka digital yang murni bagi para gamer yang lelah dengan toksisitas dan batasan hierarki. Di dunia luar, level, pangkat, dan pencapaian sering kali menentukan siapa yang didengar. Namun di sini, lingkaran pertemanan dibentuk atas dasar solidaritas, keseruan bermain, dan rasa saling menghargai.
             </p>
             <p class="about-text" style="margin-bottom: 0;">
-                Baik Anda seorang pemain kasual yang ingin melepas penat setelah seharian beraktivitas, maupun pemain kompetitif yang mencari partner handal untuk turnamen, Amerta adalah rumah bagi siapa saja yang menghargai kebersamaan sejati.
+                Baik Anda seorang pemain kasual yang ingin melepas penat setelah seharian beraktivitas, maupun pemain kompetitif yang mencari partner handal, Amerta adalah rumah bagi siapa saja yang menghargai kebersamaan sejati.
             </p>
         </div>
     </div>
 
-    <!-- HALAMAN 3: TAMPILAN KHUSUS GALERI FOTO -->
+    <!-- HALAMAN 3: GALERI FOTO (6 FOTO DARI FREEIMAGE) -->
     <div id="galleryPage" class="page">
         <div class="gallery-card">
             <div class="page-title">Galeri Komunitas</div>
             <div class="gallery-grid">
                 <!-- Foto 1 -->
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop&q=60" alt="Malam Mabar Akbar" class="gallery-img">
-                    <div class="gallery-caption">🔥 Malam Mabar Akbar Squad Amerta</div>
+                    <img src="https://iili.io/CZnBBHJ.md.png" alt="Galeri 1 Amerta" class="gallery-img">
+                    <div class="gallery-caption">✨ Momen Kebersamaan Amerta 1</div>
                 </div>
                 <!-- Foto 2 -->
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&auto=format&fit=crop&q=60" alt="Turnamen Internal" class="gallery-img">
-                    <div class="gallery-caption">🏆 Momen Seru Turnamen Internal Komunitas</div>
+                    <img src="https://iili.io/CZnq4wl.md.png" alt="Galeri 2 Amerta" class="gallery-img">
+                    <div class="gallery-caption">🔥 Keseruan Mabar Squad 2</div>
+                </div>
+                <!-- Foto 3 -->
+                <div class="gallery-item">
+                    <img src="https://iili.io/CZnqpAx.md.png" alt="Galeri 3 Amerta" class="gallery-img">
+                    <div class="gallery-caption">🎮 Aksi Solidaritas Komunitas 3</div>
+                </div>
+                <!-- Foto 4 -->
+                <div class="gallery-item">
+                    <img src="https://iili.io/CZnqD8b.md.png" alt="Galeri 4 Amerta" class="gallery-img">
+                    <div class="gallery-caption">⭐ Dokumentasi Seru 4</div>
+                </div>
+                <!-- Foto 5 -->
+                <div class="gallery-item">
+                    <img src="https://iili.io/CZnCUhl.md.png" alt="Galeri 5 Amerta" class="gallery-img">
+                    <div class="gallery-caption">🏆 Aktivitas Seru Member 5</div>
+                </div>
+                <!-- Foto 6 -->
+                <div class="gallery-item">
+                    <img src="https://iili.io/CZnCwrX.md.png" alt="Galeri 6 Amerta" class="gallery-img">
+                    <div class="gallery-caption">🎯 Suasana Hangat Discord Amerta 6</div>
                 </div>
             </div>
         </div>
