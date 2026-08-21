@@ -10,22 +10,22 @@
         
         html, body {
             height: 100%;
-            overflow: hidden; /* Mencegah scrollbar utama */
+            overflow: hidden;
         }
 
         body { 
             background: linear-gradient(135deg, #050505 0%, #0d0a08 100%);
-            color: #e5e5e5; 
-            display: flex; 
+            color: #e5e5e5;
+            display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center; 
-            min-height: 100vh; 
-            text-align: center; 
-            position: relative; 
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            position: relative;
         }
 
-        /* --- BACKGROUND VIDEO PRESISI DI TENGAH --- */
+        /* --- BACKGROUND VIDEO --- */
         .video-background {
             position: fixed;
             top: 50%;
@@ -47,7 +47,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(7, 5, 4, 0.88); 
+            background-color: rgba(7, 5, 4, 0.88);
             z-index: -1;
         }
 
@@ -159,7 +159,7 @@
 
         /* --- TAMPILAN PAGE / HALAMAN SPESIFIK --- */
         .page {
-            display: none; 
+            display: none;
             width: 100%;
             max-width: 700px;
             padding: 20px;
@@ -170,7 +170,7 @@
         }
 
         .page.active {
-            display: flex; 
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -181,37 +181,37 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* --- 1. TAMPILAN BERANDA --- */
+        /* --- 1. TAMPILAN BERANDA (HANYA LOGO & SLOGAN) --- */
         .logo-img { 
-            width: 150px; 
-            height: 150px; 
-            object-fit: cover; 
-            border-radius: 50%; 
-            border: 3px solid #d4af37; 
-            margin-bottom: 25px; 
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #d4af37;
+            margin-bottom: 25px;
             box-shadow: 0 0 35px rgba(212, 175, 55, 0.4), 
                         0 0 70px rgba(140, 88, 48, 0.2), 
                         inset 0 0 15px rgba(255, 215, 0, 0.3);
-            background-color: #120e0a; 
+            background-color: #120e0a;
         }
         
         .logo { 
-            font-size: 2.8rem; 
-            font-weight: 800; 
-            letter-spacing: 4px; 
-            background: linear-gradient(45deg, #ffd700, #d4af37, #b8860b); 
-            background-clip: text; 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-            margin-bottom: 15px; 
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            background: linear-gradient(45deg, #ffd700, #d4af37, #b8860b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
             text-transform: uppercase;
             filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.3));
         }
 
         p.slogan { 
-            color: #a39890; 
-            font-size: 1.1rem; 
-            line-height: 1.8; 
+            color: #a39890;
+            font-size: 1.1rem;
+            line-height: 1.8;
             font-weight: 500;
         }
 
@@ -339,7 +339,7 @@
             <li><a onclick="showPage('homePage')">Beranda</a></li>
             <li><a onclick="showPage('aboutPage')">Tentang</a></li>
             <li><a onclick="showPage('galleryPage')">Galeri Foto</a></li>
-            <li><a href="https://discord.gg/eus8bBmPU" target="_blank" rel="noopener noreferrer">Discord Resmi</a></li>
+            <li><a href="https://discord.gg/g37p647xXT" target="_blank" rel="noopener noreferrer">Discord Resmi</a></li>
         </ul>
     </nav>
 
@@ -365,40 +365,20 @@ Semua setara dalam ruang yang sama.</p>
         </div>
     </div>
 
-    <!-- HALAMAN 3: GALERI FOTO (6 FOTO) -->
+    <!-- HALAMAN 3: GALERI FOTO -->
     <div id="galleryPage" class="page">
         <div class="gallery-card">
             <div class="page-title">Galeri Komunitas</div>
             <div class="gallery-grid">
                 <!-- Foto 1 -->
                 <div class="gallery-item">
-                    <img src="https://iili.io/CZnBBHJ.md.png" alt="Galeri 1 Amerta" class="gallery-img">
-                    <div class="gallery-caption">✨ Momen Kebersamaan Amerta 1</div>
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop&q=60" alt="Malam Mabar Akbar" class="gallery-img">
+                    <div class="gallery-caption">🔥 Malam Mabar Akbar Squad Amerta</div>
                 </div>
                 <!-- Foto 2 -->
                 <div class="gallery-item">
-                    <img src="https://iili.io/CZnq4wl.md.png" alt="Galeri 2 Amerta" class="gallery-img">
-                    <div class="gallery-caption">🔥 Keseruan Mabar Squad 2</div>
-                </div>
-                <!-- Foto 3 -->
-                <div class="gallery-item">
-                    <img src="https://iili.io/CZnqpAx.md.png" alt="Galeri 3 Amerta" class="gallery-img">
-                    <div class="gallery-caption">🎮 Aksi Solidaritas Komunitas 3</div>
-                </div>
-                <!-- Foto 4 -->
-                <div class="gallery-item">
-                    <img src="https://iili.io/CZnqD8b.md.png" alt="Galeri 4 Amerta" class="gallery-img">
-                    <div class="gallery-caption">⭐ Dokumentasi Seru 4</div>
-                </div>
-                <!-- Foto 5 -->
-                <div class="gallery-item">
-                    <img src="https://iili.io/CZnCUhl.md.png" alt="Galeri 5 Amerta" class="gallery-img">
-                    <div class="gallery-caption">🏆 Aktivitas Seru Member 5</div>
-                </div>
-                <!-- Foto 6 -->
-                <div class="gallery-item">
-                    <img src="https://iili.io/CZnCwrX.md.png" alt="Galeri 6 Amerta" class="gallery-img">
-                    <div class="gallery-caption">🎯 Suasana Hangat Discord Amerta 6</div>
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&auto=format&fit=crop&q=60" alt="Momen Seru" class="gallery-img">
+                    <div class="gallery-caption">🏆 Momen Seru Bersama Komunitas</div>
                 </div>
             </div>
         </div>
@@ -409,35 +389,29 @@ Semua setara dalam ruang yang sama.</p>
         &copy; 2026 <span>AMERTA Community</span>. All Rights Reserved. Crafted with passion for gamers.
     </footer>
 
-    <!-- Script JavaScript untuk Buka-Tutup Menu & Perpindahan Halaman -->
+    <!-- Script JavaScript -->
     <script>
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
 
-        // Toggle Menu Garis 3
         menuToggle.addEventListener('click', (e) => {
             e.stopPropagation();
             navLinks.classList.toggle('active');
         });
 
-        // Menutup menu jika klik di luar
         document.addEventListener('click', () => {
             navLinks.classList.remove('active');
         });
 
-        // Fungsi Perpindahan Tampilan Halaman
         function showPage(pageId) {
-            // Sembunyikan semua page
             const pages = document.querySelectorAll('.page');
             pages.forEach(page => page.classList.remove('active'));
 
-            // Tampilkan page yang dipilih
             const selectedPage = document.getElementById(pageId);
             if (selectedPage) {
                 selectedPage.classList.add('active');
             }
 
-            // Tutup dropdown menu setelah diklik
             navLinks.classList.remove('active');
         }
     </script>
